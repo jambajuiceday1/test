@@ -1,0 +1,11 @@
+package binarySearchTree;
+
+public class BinaryTree {
+
+	public static void main(String[] args) {
+
+		Node node = new Node(1);
+		addNode(node);
+	}
+
+}

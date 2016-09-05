@@ -1,0 +1,43 @@
+package binarySearchTree;
+
+public class BinaryTree {
+
+	static Node root;
+
+	private static void addNode(int x) {
+		
+		Node newNode = new Node(x);
+		
+		if(root == null){
+			root = newNode;
+			
+		}else{
+			
+			Node focusNode = root;
+			Node Parent;
+			
+			while(true){
+				
+				Parent = focusNode;
+				
+				if(x < focusNode.key){
+					
+					focusNode = focusNode.leftChild;
+					if(focusNode == null){
+						Parent.leftChild = focusNode;
+					}
+					
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+
+		
+		  
+		 addNode(1);
+		 
+	}
+
+}

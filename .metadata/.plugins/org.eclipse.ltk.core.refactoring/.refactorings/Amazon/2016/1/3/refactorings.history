@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;strings.Strings&apos; to &apos;One&apos;&#x0D;&#x0A;- Original project: &apos;Amazon&apos;&#x0D;&#x0A;- Original element: &apos;strings.Strings&apos;&#x0D;&#x0A;- Renamed element: &apos;strings.One&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Strings&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;strings{Strings.java[Strings" matchStrategy="1" name="One" qualified="false" references="true" similarDeclarations="false" stamp="1452827279308" textual="false" version="1.0"/>
+</session>

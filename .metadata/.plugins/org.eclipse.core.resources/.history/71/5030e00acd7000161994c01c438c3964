@@ -1,0 +1,12 @@
+package binarySearchTree;
+
+public class Node {
+
+	int key;
+	Node leftChild;
+	Node rightChild;
+	
+	public Node(int x){
+		key = x;
+	}
+}

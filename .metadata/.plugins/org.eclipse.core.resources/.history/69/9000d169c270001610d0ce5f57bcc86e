@@ -1,0 +1,77 @@
+package Equilar;
+
+public class maximum_subarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] array = { -2,1,1,1,1,1,1,1 };
+
+		itearte(array);
+		//System.out.println(findMaxSum(array));
+		//System.out.println(bruteForce(array));
+		//System.out.println(cadans(array));
+	}
+
+	private static void itearte(int[] array) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < array.length; i++) {
+			System.out.println("arra[i] "+i+" "+array[i]);
+		}
+	}
+
+	private static int cadans(int[] array) {
+		// TODO Auto-generated method stub
+		int max = 0;
+		int sum = 0;
+		
+		for (int i = 0; i < array.length; i++) {
+
+			System.out.println("array[i]"+array[i]);
+			sum = sum + array[i];
+			if(sum < 0)
+				sum = 0;
+
+			System.out.println("i "+i+" sum"+sum);
+			if(sum > max){
+				max = sum;
+			System.out.println("max "+max);
+			System.out.println();
+			}
+			
+		}
+		return max;
+	}
+
+	private static int bruteForce(int[] array) {
+		// TODO Auto-generated method stub
+		int max = 0;
+		int sum = 0;
+		for (int i = 0; i < array.length; i++) {
+			sum= 0;
+			for (int j = i; j < array.length; j++) {
+				
+				sum = sum + array[j];
+				if(sum > max)
+					max = sum;
+			}
+		}
+		return max;
+	}
+	
+	//Kadan's algo
+
+	private static int findMaxSum(int[] array) {
+
+		int max = array[0];
+		int newSum = array[0];
+
+		for (int i = 0; i < array.length; i++) {
+			newSum = Math.max(newSum + array[i], array[i]);
+			max = Math.max(newSum, max);
+		}
+
+		return max;
+	}
+
+}
